@@ -34,6 +34,11 @@ public class singleton {
         private singleton() {
         }
 
-        
+        public static singleton getCoffee() {
+            if (coffee == null) {
+                coffee = new singleton();
+            }
+            return coffee;
+        }
 }
 
