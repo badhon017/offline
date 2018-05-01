@@ -62,3 +62,21 @@ class Beef implements  iBuilder
     }
 
 }
+
+class Food
+{
+    private LinkedList<String> item;
+    public  Food ()
+    {
+        item = new LinkedList<String >();
+    }
+    public void Add (String temp) {
+        item.addLast(temp);
+    }
+    public void Show () {
+        System.out.println("\n The Burger is Ready as below");
+        for (int i=0; i<item.size(); i++) {
+            System.out.println(item.get(i));
+        }
+    }
+}
