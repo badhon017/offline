@@ -40,5 +40,15 @@ public class singleton {
             }
             return coffee;
         }
+		public static iCoffee createCoffee (String type) {
+           if (type == "coffeeA") {
+               return new CoffeeA();
+           } 
+           else if (type == "coffeeB")
+               return new CoffeeB();
+           else if (type == "coffeeC")
+               return new CoffeeC();
+           else return null;
+        }
 }
 
