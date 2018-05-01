@@ -80,3 +80,40 @@ class Food
         }
     }
 }
+
+class Waiter
+{
+    iBuilder builder ;
+
+    public  void Cooking (iBuilder build) {
+        builder = build;
+        builder.buildBurger();
+        builder.addCheese();
+        builder.addPatty();
+        builder.addSauce();
+    }
+}
+
+public class burger {
+    public static void main(String[] args) {
+            System.out.println ("TakeOut Burger -----");
+
+            Waiter waiter = new Waiter();
+
+            iBuilder chickenBurger  = new Chicken();
+            iBuilder BeefBurger  = new Beef();
+
+            //Cooking Chicken Burger
+            waiter.Cooking(chickenBurger);
+            Food f1 = chickenBurger.getFood();
+            f1.Show();
+
+            //Cooking Beef Burger
+            waiter.Cooking(BeefBurger);
+            Food f2 = BeefBurger.getFood();
+            f2.Show();
+
+
+    }
+
+}
