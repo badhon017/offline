@@ -35,3 +35,30 @@ class Chicken implements  iBuilder
     }
 
 }
+
+class Beef implements  iBuilder
+{
+    private  Food food = new Food();
+
+    public void buildBurger ()
+    {
+        food.Add("This is a Beef Burger with ");
+    }
+    public void addPatty ()
+    {
+        food.Add("patty 2");
+    }
+    public void addSauce ()
+    {
+        food.Add("Sauce 2");
+    }
+    public void addCheese ()
+    {
+        food.Add("Cheese 2");
+    }
+    public Food getFood ()
+    {
+        return food;
+    }
+
+}
