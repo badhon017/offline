@@ -27,3 +27,13 @@ interface iCoffee
         System.out.println("Coffee C is made with milk, caffein and sugar");
     }
     }
+	
+public class singleton {
+    private static singleton coffee;
+
+        private singleton() {
+        }
+
+        
+}
+
